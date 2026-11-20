@@ -8,7 +8,7 @@
 <meta name="description" content="Jogos, lore e o sonho de criar mundos: a história por trás de Guilherme Alcântara.">
 <link rel="canonical" href="https://guilhermeabaoliveira.github.io/inspiracao.html">
 <meta name="color-scheme" content="dark light">
-<meta name="theme-color" content="#0B1214">
+<meta name="theme-color" content="#0D0B09">
 <meta property="og:title" content="O que me move · Guilherme Alcântara">
 <meta property="og:description" content="Jogos, lore e o sonho de criar mundos: a história por trás de Guilherme Alcântara.">
 <meta property="og:type" content="profile">
@@ -20,10 +20,9 @@
 // tema e idioma antes do primeiro desenho, para não piscar
 (function(){try{var t=localStorage.getItem('ga-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);var l=localStorage.getItem('ga-lang');if(l==='en'||location.hash==='#en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en'}}catch(e){}document.documentElement.classList.add('js')})();
 </script>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230B1214'/%3E%3Ctext%20x='16'%20y='22'%20text-anchor='middle'%20font-family='Arial,Helvetica,sans-serif'%20font-weight='700'%20font-size='15'%20fill='%23F2F5F5'%3EGA%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230D0B09'/%3E%3Ctext%20x='16'%20y='22'%20text-anchor='middle'%20font-family='Georgia,serif'%20font-weight='700'%20font-size='15'%20fill='%23D9A55B'%3EGA%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/cinzel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/garamond.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -31,11 +30,12 @@
 
 <header class="bar">
   <div class="wrap">
-    <a class="brand" href="index.html">Guilherme Alcântara</a>
+    <span class="brand">Guilherme Alcântara Batista Alencar de Oliveira</span>
     <div class="bar-r">
       <nav class="nav" aria-label="Principal / Main">
-        <a href="index.html#projetos"><span lang="pt-BR">Projetos</span><span lang="en">Projects</span></a>
-        <a href="projeto-1.html"><span lang="pt-BR">Projeto 1</span><span lang="en">Project 1</span></a>
+        <a href="index.html"><span lang="pt-BR">Início</span><span lang="en">Home</span></a>
+        <a href="projetos.html"><span lang="pt-BR">Projetos</span><span lang="en">Projects</span></a>
+        <a href="jogos.html"><span lang="pt-BR">Meus jogos</span><span lang="en">My games</span></a>
         <a href="estudos.html"><span lang="pt-BR">Estudos</span><span lang="en">Learning</span></a>
         <a href="inspiracao.html" aria-current="page"><span lang="pt-BR">O que me move</span><span lang="en">What drives me</span></a>
         <a href="index.html#contato"><span lang="pt-BR">Contato</span><span lang="en">Contact</span></a>
@@ -58,93 +58,45 @@
   <section class="page-hero wrap">
     <p class="kick"><span lang="pt-BR">O que me move</span><span lang="en">What drives me</span></p>
     <h1><span lang="pt-BR">Quero levar pessoas para outros mundos.</span><span lang="en">I want to take people to other worlds.</span></h1>
-    <p class="lead"><span lang="pt-BR">Quero ser a pessoa que busca alguém em casa e leva para um universo completamente diferente: com uma aplicação inovadora, uma experiência tecnológica sensacional ou um jogo com uma lore tão bonita que prende por dias.</span><span lang="en">I want to be the person who picks someone up at home and takes them to a completely different universe: with an innovative app, an amazing tech experience or a game whose lore is so beautiful it holds you for days.</span></p>
+    <p class="lead"><span lang="pt-BR">Tenho o sonho de proporcionar experiências: um app, uma tecnologia inovadora ou um jogo com uma lore tão boa que a pessoa não consegue largar.</span><span lang="en">I dream of creating experiences: an app, an innovative technology or a game with lore so good people can't put it down.</span></p>
   </section>
 
   <div class="story-long wrap">
     <section class="chapter-b" aria-labelledby="c-1">
-      <h2 id="c-1"><span lang="pt-BR">Onde tudo começou</span><span lang="en">Where it all began</span></h2>
-      <p><span lang="pt-BR">Cresci com PS1, PS2 e Game Boy nas mãos. Colecionava as revistas mensais da Level Up! Games e jogava quase tudo o que eles lançavam. Meu sonho de criança era trabalhar lá: eu folheava as revistas e ficava imaginando como seria o dia a dia de uma empresa como aquela.</span><span lang="en">I grew up with a PS1, a PS2 and a Game Boy in my hands. I collected the monthly Level Up! Games magazines and played almost everything they released. My childhood dream was to work there: I would flip through the magazines wondering what a day at a company like that would be like.</span></p>
-      <p><span lang="pt-BR">Aos 7 anos, ganhei da minha avó um CD de Ragnarok Online, daqueles que distribuíam de graça junto com as revistas. Joguei com meu primo, e nunca mais parei: jogo Ragnarok até hoje, no servidor da América Latina.</span><span lang="en">At 7, my grandmother gave me a Ragnarok Online CD, one of those handed out for free with the magazines. I played it with my cousin and never stopped: I still play Ragnarok today, on the Latin American server.</span></p>
+      <h2 id="c-1"><span lang="pt-BR">Começou com um CD de Ragnarok</span><span lang="en">It started with a Ragnarok CD</span></h2>
+      <figure class="relic relic-kid"><img src="assets/crianca.webp" width="642" height="1000" loading="lazy" alt="Foto antiga de Guilherme bebê sorrindo numa festa de aniversário" data-alt-en="An old photo of baby Guilherme smiling at a birthday party"></figure>
+      <p><span lang="pt-BR">Antes de qualquer linha de código, teve um Game Boy. Depois vieram o PS1, o PS2 e uma pilha de revistas da Level Up! Games que eu colecionava todo mês. Meu sonho de criança era trabalhar lá (sim, eu era aquela criança).</span><span lang="en">Before any line of code, there was a Game Boy. Then came the PS1, the PS2 and a stack of Level Up! Games magazines I collected every month. My childhood dream was to work there (yes, I was that kid).</span></p>
+      <p><span lang="pt-BR">Aos 7 anos, minha avó me deu um CD de Ragnarok Online. Chamei meu primo pra jogar junto e nunca mais larguei: jogo até hoje. Depois vieram as lan houses de Caruaru e, bem mais tarde, os souls, que me ensinaram a perder com paciência.</span><span lang="en">When I was 7, my grandmother gave me a Ragnarok Online CD. I called my cousin to play with me and never let go: I still play it today. Then came the internet cafés in Caruaru and, much later, the souls games, which taught me to lose patiently.</span></p>
+      <figure class="relic">
+        <img src="assets/ragnarok.webp" width="1600" height="1200" loading="lazy" alt="Manual de instruções, revista e CD de Ragnarok Online da Level Up!, com capas gastas pelo tempo." data-alt-en="Level Up! Ragnarok Online instruction manual, magazine and CD, covers worn by time.">
+      </figure>
+      <p class="more-row"><a href="jogos.html"><span lang="pt-BR">Os jogos que me formaram →</span><span lang="en">The games that shaped me →</span></a></p>
     </section>
 
     <section class="chapter-b" aria-labelledby="c-2">
-      <h2 id="c-2"><span lang="pt-BR">Lan house e primos mais velhos</span><span lang="en">Internet cafés and older cousins</span></h2>
-      <p><span lang="pt-BR">Em Caruaru, eu jogava na Intergames, quase do lado do Colégio Diocesano, onde eu estudava. Na adolescência, joguei Diablo II com meus dois primos mais velhos, ainda na versão original, muito antes do Resurrected.</span><span lang="en">In Caruaru, I played at Intergames, right next to Colégio Diocesano, where I went to school. As a teenager, I played Diablo II with my two older cousins, still the original version, long before Resurrected.</span></p>
-      <p class="q"><span lang="pt-BR">Os tempos de lan house não existem mais, e muita coisa mudou. Mas muito do que eu sou começou ali.</span><span lang="en">The internet café days are gone, and a lot has changed. But much of who I am started there.</span></p>
+      <h2 id="c-2"><span lang="pt-BR">Por que deixei o Direito</span><span lang="en">Why I left law</span></h2>
+      <p><span lang="pt-BR">Quando eu era criança, todo mundo repetia a mesma coisa: tecnologia não dá dinheiro, e trabalhar com jogo, então, nem pensar. Não existia IA, e a tecnologia não era nem de longe o que é hoje.</span><span lang="en">When I was a kid, everyone said the same thing: tech doesn't pay, and working with games was out of the question. There was no AI, and tech was nowhere near what it is today.</span></p>
+      <p><span lang="pt-BR">Então fui de Direito. O leque era enorme, e a diplomacia parecia um bom caminho pro meu outro sonho, o de morar e trabalhar fora. Me formei, mas cuidar dos problemas da vida dos outros nunca foi o meu propósito.</span><span lang="en">So I went with law. It opened a lot of doors, and diplomacy looked like a good road to my other dream: living and working abroad. I graduated, but dealing with other people's problems was never my purpose.</span></p>
+      <blockquote class="pull"><span lang="pt-BR">Direito definitivamente não é pra mim.</span><span lang="en">Law is definitely not for me.</span></blockquote>
+      <p><span lang="pt-BR">O curioso é que o futuro que eu imaginava quando criança virou exatamente o presente, e quem dizia que não dava quebrou a cara. Era pra ter seguido a minha intuição desde o começo. Mas tudo bem: no fim de 2023 comecei a programar, e agora estou do lado certo da tela.</span><span lang="en">The funny thing is that the future I imagined as a kid turned out to be exactly the present, and everyone who said it wouldn't work was proven wrong. I should have followed my gut from the start. But that's fine: in late 2023 I started programming, and now I'm on the right side of the screen.</span></p>
     </section>
 
     <section class="chapter-b" aria-labelledby="c-3">
-      <h2 id="c-3"><span lang="pt-BR">Os mundos por onde passei</span><span lang="en">The worlds I have been through</span></h2>
-      <ul class="interests">
-      <li>Ragnarok Online</li>
-      <li>Diablo II</li>
-      <li>Perfect World</li>
-      <li>Grand Chase</li>
-      <li>Aion</li>
-      <li>Lineage 2</li>
-      <li>Forsaken World</li>
-      <li>World of Warcraft</li>
-      <li>Final Fantasy XIV</li>
-      <li>Path of Exile</li>
-      <li>Path of Exile 2</li>
-      <li>Counter-Strike 1.6</li>
-      <li>GTA San Andreas</li>
-      <li>The Sims 2</li>
-      <li>Winning Eleven 11</li>
-      <li>God of War</li>
-      <li>Manhunt</li>
-      <li>Sekiro</li>
-      <li>Elden Ring</li>
-      <li>Dark Souls</li>
-      <li>Dark Souls II</li>
-      <li>Dark Souls III</li>
-      <li>Black Myth: Wukong</li>
-      <li>Black Desert</li>
-      <li>Crimson Desert</li>
-      <li>League of Legends</li>
-      </ul>
-      <p class="q" style="margin-top:1rem"><span lang="pt-BR">League of Legends entra na lista. Infelizmente.</span><span lang="en">League of Legends is on the list. Unfortunately.</span></p>
+      <h2 id="c-3"><span lang="pt-BR">O que me fascina</span><span lang="en">What fascinates me</span></h2>
+      <p><span lang="pt-BR">Eu não consigo só jogar. Fico reparando em como aquilo foi feito: o sistema por trás, a física, o som, o cenário. E o que mais me toca é ver um jogo lindo rodando liso num computador fraco. Alguém sentou e otimizou aquilo pra que mais gente pudesse jogar. Pra mim, isso é carinho.</span><span lang="en">I can't just play. I keep noticing how it was made: the system behind it, the physics, the sound, the scenery. And what touches me most is seeing a beautiful game run smoothly on a weak computer. Someone sat down and optimized it so more people could play. To me, that's care.</span></p>
+      <p><span lang="pt-BR">É por isso que eu admiro tanto quem desenvolve jogos com esse cuidado, tratando o jogador como gente e não como carteira. Ter um jogo meu na Steam um dia é um sonho.</span><span lang="en">That's why I admire game developers who work with that kind of care, treating players like people, not wallets. Having a game of mine on Steam one day is a dream.</span></p>
+      <p><span lang="pt-BR">Com IA é a mesma coisa. Eu amo quando ela ajuda a criar, desde que não apague o carinho que quem desenvolve coloca no coração de cada ideia.</span><span lang="en">It's the same with AI. I love it when it helps people create, as long as it doesn't erase the care developers put into the heart of every idea.</span></p>
     </section>
 
-    <section class="chapter-b" aria-labelledby="c-4">
-      <h2 id="c-4"><span lang="pt-BR">Apanhando para aprender</span><span lang="en">Getting beaten to learn</span></h2>
-      <p><span lang="pt-BR">Meu primeiro contato com o universo souls foi Sekiro, e eu apanhei tanto que saí com uma derrota psicológica. Tempos depois veio o lançamento de Elden Ring, minha primeira experiência souls de verdade. Desde então joguei tudo da FromSoftware: Elden Ring, Dark Souls III, Dark Souls, voltei a Sekiro e platinei, e deixei Dark Souls II por último por causa da fama polêmica na comunidade.</span><span lang="en">My first contact with the souls universe was Sekiro, and I got beaten so badly I walked away with a psychological defeat. Later came the release of Elden Ring, my first real souls experience. Since then I have played everything from FromSoftware: Elden Ring, Dark Souls III, Dark Souls, I went back to Sekiro and got the platinum, and I left Dark Souls II for last because of its controversial reputation in the community.</span></p>
-      <p><span lang="pt-BR">Para minha surpresa, Dark Souls II tem sido o mais rico em lore de todos os que joguei. Também joguei Black Myth: Wukong.</span><span lang="en">To my surprise, Dark Souls II has been the richest in lore of all the ones I have played. I also played Black Myth: Wukong.</span></p>
-    </section>
-
-    <section class="chapter-b" aria-labelledby="c-5">
-      <h2 id="c-5"><span lang="pt-BR">Do Direito para cá</span><span lang="en">From law to here</span></h2>
-      <p><span lang="pt-BR">Moro em Recife desde os 15 anos. Saí cedo de casa, e acho que esse impulso já vinha de muito antes: desde criança eu sonho em morar fora, conhecer o mundo, viajar muito e trabalhar no exterior, numa grande desenvolvedora de jogos ou numa empresa de tecnologia de renome.</span><span lang="en">I have lived in Recife since I was 15. I left home early, and I think that urge came from much earlier: since childhood I have dreamed of living abroad, seeing the world, traveling a lot and working overseas, at a major game studio or a renowned tech company.</span></p>
-      <p><span lang="pt-BR">Escolhi o Direito porque o leque era grande. Relações Internacionais não é uma profissão tão valorizada no Brasil, e eu via na diplomacia um caminho. Mas o Direito definitivamente não era para mim: meu propósito não é lidar com os problemas da vida dos outros.</span><span lang="en">I chose law because it opened many doors. International Relations is not a highly valued profession in Brazil, and I saw diplomacy as a path. But law was definitely not for me: my purpose is not dealing with other people&#39;s problems.</span></p>
-      <blockquote class="pull"><span lang="pt-BR">Direito definitivamente não é pra mim.</span><span lang="en">Law is definitely not for me.</span></blockquote>
-      <p class="q"><span lang="pt-BR">Sempre tive uma curiosidade enorme por estar por dentro do que é mais exclusivo no núcleo de cada bolha da tecnologia.</span><span lang="en">I have always been deeply curious about being on the inside of what is most exclusive at the core of every tech bubble.</span></p>
-    </section>
-
-    <section class="chapter-b" aria-labelledby="c-6">
-      <h2 id="c-6"><span lang="pt-BR">O que me fascina por dentro de um jogo</span><span lang="en">What fascinates me inside a game</span></h2>
-      <p><span lang="pt-BR">Game design, arquitetura de sistemas, física, cálculos matemáticos, engenharia de som, animação 3D, renderização, criação de cenários: a engenharia de tudo o que se pode imaginar dentro de um jogo.</span><span lang="en">Game design, systems architecture, physics, math, sound engineering, 3D animation, rendering, level building: the engineering of everything you can imagine inside a game.</span></p>
-      <p><span lang="pt-BR">Acho sensacional o trabalho de otimizar jogos lindos para rodarem em máquinas fracas. Isso mostra o carinho de quem desenvolve em incluir todo mundo.</span><span lang="en">I find the work of optimizing beautiful games to run on weak machines amazing. It shows how much the developers care about including everyone.</span></p>
-      <p><span lang="pt-BR">E eu amo IA generativa em jogos, quando ela conserva a essência orgânica do amor e do carinho que os desenvolvedores colocam no núcleo criativo dos conceitos de um jogo.</span><span lang="en">And I love generative AI in games, when it keeps the organic essence of the love and care developers put into the creative core of a game&#39;s concepts.</span></p>
-    </section>
-
-    <section class="chapter-b" aria-labelledby="c-7">
-      <h2 id="c-7"><span lang="pt-BR">Quem eu admiro</span><span lang="en">Who I admire</span></h2>
-      <p><span lang="pt-BR">A Valve, com a Steam, e a Grinding Gear Games, de Path of Exile, são para mim exemplos de respeito ao consumidor. Ter um jogo meu na Steam, ou trabalhar na Steam ou na GGG, é um sonho.</span><span lang="en">Valve, with Steam, and Grinding Gear Games, behind Path of Exile, are to me examples of respect for players. Having my own game on Steam, or working at Steam or GGG, is a dream.</span></p>
-      <p><span lang="pt-BR">Várias empresas coreanas também fazem parte desse amor: Nexon, Gravity, Smilegate, de Lost Ark, e Pearl Abyss. Joguei Black Desert no passado, e este ano me aventurei horrores até platinar Crimson Desert, sem dúvida o meu jogo do ano de 2026.</span><span lang="en">Several Korean companies are also part of that love: Nexon, Gravity, Smilegate, behind Lost Ark, and Pearl Abyss. I played Black Desert in the past, and this year I went all in until I got the platinum in Crimson Desert, without a doubt my game of the year for 2026.</span></p>
-    </section>
-
-    <section class="chapter-b" aria-labelledby="c-8">
-      <h2 id="c-8"><span lang="pt-BR">Os mundos que me formaram</span><span lang="en">The worlds that shaped me</span></h2>
-      <p><span lang="pt-BR">Meus gêneros favoritos são os jogos de progressão, com theory crafting e escalas de poder, e a fantasia e a fantasia sombria, cada vez mais com o passar do tempo.</span><span lang="en">My favorite genres are progression games, with theory crafting and power scaling, and fantasy and dark fantasy, more and more as time goes by.</span></p>
-      <p><span lang="pt-BR">Quanto mais os anos passam, mais eu entendo o carinho por trás de uma lore como a de Berserk, que influenciou tanto os jogos souls, ou a de O Senhor dos Anéis, ou a de As Crônicas de Gelo e Fogo, cujo autor participou de Elden Ring.</span><span lang="en">The more the years go by, the more I understand the care behind a lore like Berserk&#39;s, which influenced the souls games so much, or The Lord of the Rings, or A Song of Ice and Fire, whose author took part in Elden Ring.</span></p>
-      <p class="q"><span lang="pt-BR">Isso é um pouco de tudo o que eu sou.</span><span lang="en">This is a little of everything I am.</span></p>
+    <section class="chapter-b closing" aria-labelledby="c-4">
+      <h2 id="c-4" class="sr-only"><span lang="pt-BR">Fechamento</span><span lang="en">Closing</span></h2>
+      <p class="sign"><span lang="pt-BR">Isso é um pouco de tudo o que eu sou.</span><span lang="en">This is a little of everything I am.</span></p>
     </section>
   </div>
 </main>
 
 <footer class="footer">
-  <div class="wrap"><span>Guilherme Alcântara, Recife</span><span lang="pt-BR">Atualizado em novembro de 2026</span><span lang="en">Updated November 2026</span></div>
+  <div class="wrap"><span>Guilherme Alcântara Batista Alencar de Oliveira, Recife</span><span lang="pt-BR">Atualizado em novembro de 2026</span><span lang="en">Updated November 2026</span><a class="foot-t" href="thaynna.html"><span lang="pt-BR">Para a Thaynná</span><span lang="en">For Thaynná</span></a></div>
 </footer>
 
 <script src="assets/site.js"></script>
