@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="pt" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Bússola de Fluxo Urbano · Guilherme Alcântara</title>
+<meta name="description" content="Artefato de Projetos I na CESAR School: uma bússola física que aponta a rota mais movimentada.">
+<link rel="canonical" href="https://guilhermeabaoliveira.github.io/projeto-1.html">
+<meta name="theme-color" content="#0B1214">
+<meta property="og:title" content="Bússola de Fluxo Urbano · Guilherme Alcântara">
+<meta property="og:description" content="Artefato de Projetos I na CESAR School: uma bússola física que aponta a rota mais movimentada.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://guilhermeabaoliveira.github.io/projeto-1.html">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+<script>
+// tema e idioma antes do primeiro desenho, para não piscar
+(function(){try{var t=localStorage.getItem('ga-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);var l=localStorage.getItem('ga-lang');if(l==='en'||location.hash==='#en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en'}}catch(e){}document.documentElement.classList.add('js')})();
+</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230B1214'/%3E%3Ctext%20x='16'%20y='22'%20text-anchor='middle'%20font-family='Arial,Helvetica,sans-serif'%20font-weight='700'%20font-size='15'%20fill='%23F2F5F5'%3EGA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a href="#conteudo" class="skip"><span lang="pt-BR">Pular para o conteúdo</span><span lang="en">Skip to content</span></a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Guilherme Alcântara</a>
+    <div class="bar-r">
+      <nav class="nav" aria-label="Principal / Main">
+        <a href="index.html#projetos"><span lang="pt-BR">Projetos</span><span lang="en">Projects</span></a>
+        <a href="projeto-1.html" aria-current="page"><span lang="pt-BR">Projeto 1</span><span lang="en">Project 1</span></a>
+        <a href="estudos.html"><span lang="pt-BR">Estudos</span><span lang="en">Learning</span></a>
+        <a href="index.html#contato"><span lang="pt-BR">Contato</span><span lang="en">Contact</span></a>
+      </nav>
+      <div class="ctrl">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-set="pt" aria-pressed="true">PT</button>
+          <button type="button" data-set="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="theme" type="button" id="themeBtn" aria-label="Alternar tema claro / Toggle light theme">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="page-hero wrap">
+    <p class="kick"><span lang="pt-BR">Artefato de Projetos I, CESAR School, 2026.2</span><span lang="en">Projects I artifact, CESAR School, 2026.2</span></p>
+    <h1>Bússola de Fluxo Urbano</h1>
+    <p class="lead"><span lang="pt-BR">Uma bússola física que mostra, a cada 10 segundos, qual de três rotas teve mais passagens. Lidero a equipe de oito pessoas que constrói o projeto.</span><span lang="en">A physical compass that shows, every 10 seconds, which of three routes had the most passages. I lead the eight-person team building it.</span></p>
+    <div class="more-row">
+      <a href="https://guilhermeabaoliveira.github.io/bussola-fluxo-urbano/atlas-3d/"><span lang="pt-BR">Explorar a maquete 3D</span><span lang="en">Explore the 3D model</span></a>
+      <a href="https://github.com/guilhermeabaoliveira/bussola-fluxo-urbano"><span lang="pt-BR">Ver o código</span><span lang="en">View the code</span></a>
+    </div>
+  </section>
+
+  <section class="block wrap" aria-labelledby="p-prob">
+    <div class="split">
+      <div>
+        <h2 id="p-prob"><span lang="pt-BR">O problema</span><span lang="en">The problem</span></h2>
+        <p><span lang="pt-BR">Em espaços públicos com mais de um caminho, nem sempre é possível perceber por onde as pessoas estão passando naquele momento. A informação existe, mas não fica visível para quem está no lugar.</span><span lang="en">In public spaces with more than one path, it is not always possible to see where people are walking at that moment. The information exists, but it is not visible to the people who are there.</span></p>
+        <p class="q"><span lang="pt-BR">A proposta do grupo é tornar esse fluxo visível de um jeito simples e físico, sem tela: um ponteiro que aponta a rota mais movimentada.</span><span lang="en">The group's proposal is to make that flow visible in a simple, physical way, with no screen: a pointer that points to the busiest route.</span></p>
+      </div>
+      <figure class="shot-fig">
+        <img src="assets/bussola-3d.webp" width="1720" height="1130" alt="Modelo 3D da maquete, com as três rotas, os sensores e o totem da bússola" data-alt-en="3D model of the build, with the three routes, the sensors and the compass totem">
+        <figcaption><span lang="pt-BR">Modelo 3D da maquete de 60 por 40 cm.</span><span lang="en">3D model of the 60 by 40 cm build.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block wrap" aria-labelledby="p-how">
+    <h2 id="p-how"><span lang="pt-BR">Como funciona</span><span lang="en">How it works</span></h2>
+    <ol class="steps-list">
+      <li><b><span lang="pt-BR">Detectar</span><span lang="en">Detect</span></b><span><span lang="pt-BR">Cada rota tem um sensor ultrassônico HC-SR04 que mede a distância até o que passa na frente dele.</span><span lang="en">Each route has an HC-SR04 ultrasonic sensor that measures the distance to whatever passes in front of it.</span></span></li>
+      <li><b><span lang="pt-BR">Contar</span><span lang="en">Count</span></b><span><span lang="pt-BR">Uma passagem conta quando algo entra a menos de 9 cm e depois se afasta além de 12 cm. Um alvo parado não é contado de novo.</span><span lang="en">A passage counts when something comes closer than 9 cm and then moves beyond 12 cm. A target that stays still is not counted again.</span></span></li>
+      <li><b><span lang="pt-BR">Comparar</span><span lang="en">Compare</span></b><span><span lang="pt-BR">A cada janela de 10 segundos, o Arduino compara as contagens das três rotas.</span><span lang="en">Every 10-second window, the Arduino compares the counts of the three routes.</span></span></li>
+      <li><b><span lang="pt-BR">Apontar</span><span lang="en">Point</span></b><span><span lang="pt-BR">Um servo motor gira o ponteiro da bússola para a rota com mais passagens.</span><span lang="en">A servo motor turns the compass pointer toward the route with the most passages.</span></span></li>
+    </ol>
+  </section>
+
+  <section class="block wrap" aria-labelledby="p-parts">
+    <div class="split">
+      <table class="spec">
+        <caption><span lang="pt-BR">Componentes e ligações</span><span lang="en">Parts and wiring</span></caption>
+        <thead><tr><th scope="col"><span lang="pt-BR">Componente</span><span lang="en">Part</span></th><th scope="col"><span lang="pt-BR">Ligação no Arduino UNO</span><span lang="en">Arduino UNO pins</span></th></tr></thead>
+        <tbody>
+          <tr><td><span lang="pt-BR">Sensor da rota A</span><span lang="en">Route A sensor</span></td><td>TRIG D2, ECHO D3</td></tr>
+          <tr><td><span lang="pt-BR">Sensor da rota B</span><span lang="en">Route B sensor</span></td><td>TRIG D4, ECHO D5</td></tr>
+          <tr><td><span lang="pt-BR">Sensor da rota C</span><span lang="en">Route C sensor</span></td><td>TRIG D6, ECHO D7</td></tr>
+          <tr><td><span lang="pt-BR">Servo do ponteiro</span><span lang="en">Pointer servo</span></td><td><span lang="pt-BR">Sinal D9, fonte externa de 5 V</span><span lang="en">Signal D9, external 5 V supply</span></td></tr>
+          <tr><td><span lang="pt-BR">Base</span><span lang="en">Base</span></td><td><span lang="pt-BR">MDF de 60 por 40 cm</span><span lang="en">60 by 40 cm MDF board</span></td></tr>
+        </tbody>
+      </table>
+      <figure class="shot-fig">
+        <img src="assets/totem.webp" width="1000" height="720" loading="lazy" alt="Detalhe do totem com o mostrador das rotas A, B e C" data-alt-en="Close-up of the totem with the A, B and C route dial">
+        <figcaption><span lang="pt-BR">O totem com o mostrador das três rotas.</span><span lang="en">The totem with the three-route dial.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block wrap" aria-labelledby="p-role">
+    <div class="split">
+      <div>
+        <h2 id="p-role"><span lang="pt-BR">Meu papel</span><span lang="en">My role</span></h2>
+        <p><span lang="pt-BR">Lidero o grupo e conduzo o projeto do começo ao fim, da pesquisa à maquete, ao código e às apresentações, junto com uma equipe que divide comigo cada entrega.</span><span lang="en">I lead the group and drive the project from start to finish, from research to the physical model, the code and the presentations, with a team that shares each delivery with me.</span></p>
+        <p class="q"><span lang="pt-BR">Além da maquete física, o projeto tem um modelo 3D interativo, uma blueprint com o caminho das leituras até a decisão do ponteiro e a documentação de montagem e testes.</span><span lang="en">Beyond the physical model, the project has an interactive 3D model, a blueprint tracing the readings to the pointer decision, and assembly and test documentation.</span></p>
+        <div class="more-row">
+          <a href="https://guilhermeabaoliveira.github.io/bussola-fluxo-urbano/blueprint/">Blueprint</a>
+          <a href="https://guilhermeabaoliveira.github.io/bussola-fluxo-urbano/explainer/">Explainer</a>
+        </div>
+      </div>
+      <div>
+        <h2><span lang="pt-BR">Onde estamos</span><span lang="en">Where we are</span></h2>
+        <ul class="status">
+          <li><time datetime="2026-11-18">18/11/2026</time><span><span lang="pt-BR">Uma unidade do sensor funcionou no teste real.</span><span lang="en">One sensor unit worked on real hardware.</span></span></li>
+          <li><span class="tag"><span lang="pt-BR">A seguir</span><span lang="en">Next</span></span><span><span lang="pt-BR">Testar a montagem completa, com os três sensores e o servo.</span><span lang="en">Test the full build, with the three sensors and the servo.</span></span></li>
+          <li><time datetime="2026-12-11">11/12/2026</time><span><span lang="pt-BR">Entrega final da disciplina.</span><span lang="en">Final course delivery.</span></span></li>
+          <li><time datetime="2026-12-13">13/12/2026</time><span><span lang="pt-BR">Apresentação na Mostra TechDesign.</span><span lang="en">Showcase at the TechDesign exhibition.</span></span></li>
+        </ul>
+        <p class="q" style="margin-top:1rem"><span lang="pt-BR">O sensor mede distância; ele não identifica pessoas. Em escala real, seria preciso outro tipo de sensor, como radar ou LiDAR.</span><span lang="en">The sensor measures distance; it does not identify people. At real scale, another kind of sensor, such as radar or LiDAR, would be needed.</span></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap"><span>Guilherme Alcântara, Recife</span><span lang="pt-BR">Atualizado em novembro de 2026</span><span lang="en">Updated November 2026</span></div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
