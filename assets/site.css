@@ -179,3 +179,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .more-row{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;margin-top:1.4rem;font-weight:600}
 .more-row a{color:var(--accent);text-decoration:none}
 .more-row a:hover{text-decoration:underline}
+/* página longa: O que me move */
+.story-long{padding-bottom:clamp(2rem,6vw,4rem)}
+.chapter-b{max-width:760px;padding-block:clamp(2.2rem,5vw,3.6rem);border-top:1px solid var(--line)}
+.chapter-b h2{font-weight:800;font-size:clamp(1.6rem,3.2vw,2.3rem);letter-spacing:-.03em;line-height:1.1;margin:0 0 1.2rem}
+.chapter-b p{font-size:1.12rem;line-height:1.75;margin:0 0 1.1rem}
+.chapter-b p.q{color:var(--ink-2)}
+.pull{margin:2rem 0;padding:0 0 0 1.4rem;border-left:3px solid var(--accent);font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.03em;line-height:1.2}
