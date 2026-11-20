@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="pt" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Projetos · Guilherme Alcântara Batista Alencar de Oliveira</title>
+<meta name="description" content="Os projetos de Guilherme Alcântara Batista Alencar de Oliveira: hardware, software e web, com busca por palavra-chave.">
+<link rel="canonical" href="https://guilhermeabaoliveira.github.io/projetos.html">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0D0B09">
+<meta property="og:title" content="Projetos">
+<meta property="og:description" content="Os projetos de Guilherme Alcântara Batista Alencar de Oliveira: hardware, software e web, com busca por palavra-chave.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://guilhermeabaoliveira.github.io/projetos.html">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+<script>
+// tema e idioma antes do primeiro desenho, para não piscar
+(function(){try{var t=localStorage.getItem('ga-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);var l=localStorage.getItem('ga-lang');if(l==='en'||location.hash==='#en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en'}}catch(e){}document.documentElement.classList.add('js')})();
+</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230D0B09'/%3E%3Ctext%20x='16'%20y='22'%20text-anchor='middle'%20font-family='Georgia,serif'%20font-weight='700'%20font-size='15'%20fill='%23D9A55B'%3EGA%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/cinzel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a href="#conteudo" class="skip"><span lang="pt-BR">Pular para o conteúdo</span><span lang="en">Skip to content</span></a>
+
+<header class="bar">
+  <div class="wrap">
+    <span class="brand">Guilherme Alcântara Batista Alencar de Oliveira</span>
+    <div class="bar-r">
+      <nav class="nav" aria-label="Principal / Main">
+        <a href="index.html"><span lang="pt-BR">Início</span><span lang="en">Home</span></a>
+        <a href="projetos.html" aria-current="page"><span lang="pt-BR">Projetos</span><span lang="en">Projects</span></a>
+        <a href="jogos.html"><span lang="pt-BR">Meus jogos</span><span lang="en">My games</span></a>
+        <a href="estudos.html"><span lang="pt-BR">Estudos</span><span lang="en">Learning</span></a>
+        <a href="inspiracao.html"><span lang="pt-BR">O que me move</span><span lang="en">What drives me</span></a>
+        <a href="index.html#contato"><span lang="pt-BR">Contato</span><span lang="en">Contact</span></a>
+      </nav>
+      <div class="ctrl">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-set="pt" aria-pressed="true">PT</button>
+          <button type="button" data-set="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="theme" type="button" id="themeBtn" aria-label="Alternar tema claro / Toggle light theme">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="page-hero wrap">
+    <p class="kick"><span lang="pt-BR">Projetos</span><span lang="en">Projects</span></p>
+    <h1><span lang="pt-BR">Tudo o que eu já construí.</span><span lang="en">Everything I've built so far.</span></h1>
+    <p class="lead"><span lang="pt-BR">Por enquanto são quatro, mas a ideia é essa lista crescer. Procura por palavra ou filtra por área.</span><span lang="en">There are four for now, but the plan is for this list to grow. Search by keyword or filter by area.</span></p>
+  </section>
+  <section class="wrap proj-tools" aria-label="Busca e filtros">
+    <label class="search" for="proj-search"><span class="sr-only"><span lang="pt-BR">Buscar projeto</span><span lang="en">Search projects</span></span>
+      <input id="proj-search" type="search" placeholder="Buscar: arduino, python, react..." data-ph-en="Search: arduino, python, react..." autocomplete="off">
+    </label>
+    <div class="chips" role="group" aria-label="Filtros / Filters"><button type="button" data-f="all" aria-pressed="true"><span lang="pt-BR">Todos</span><span lang="en">All</span></button><button type="button" data-f="hardware" aria-pressed="false"><span lang="pt-BR">Hardware</span><span lang="en">Hardware</span></button><button type="button" data-f="software" aria-pressed="false"><span lang="pt-BR">Software</span><span lang="en">Software</span></button><button type="button" data-f="ia" aria-pressed="false"><span lang="pt-BR">IA</span><span lang="en">AI</span></button><button type="button" data-f="web" aria-pressed="false"><span lang="pt-BR">Web</span><span lang="en">Web</span></button><button type="button" data-f="python" aria-pressed="false"><span lang="pt-BR">Python</span><span lang="en">Python</span></button><button type="button" data-f="react" aria-pressed="false"><span lang="pt-BR">React</span><span lang="en">React</span></button><button type="button" data-f="jogos" aria-pressed="false"><span lang="pt-BR">Jogos</span><span lang="en">Games</span></button><button type="button" data-f="3d" aria-pressed="false"><span lang="pt-BR">3D</span><span lang="en">3D</span></button><button type="button" data-f="equipe" aria-pressed="false"><span lang="pt-BR">Em equipe</span><span lang="en">Team</span></button><button type="button" data-f="solo" aria-pressed="false"><span lang="pt-BR">Solo</span><span lang="en">Solo</span></button></div>
+    <p class="count" id="proj-count" aria-live="polite"></p>
+  </section>
+  <section class="wrap" aria-label="Lista de projetos">
+    <ul class="pgrid" id="proj-list">
+      <li class="pcard rv" data-tags="hardware equipe 3d" data-kw="arduino sensor ultrassônico ultrasonic servo maquete model liderança leadership cidade city fluxo flow">
+        <a href="projeto-1.html">
+          <img src="assets/totem.webp" width="1000" height="720" loading="lazy" alt="Totem da Bússola de Fluxo Urbano com o mostrador das rotas A, B e C" data-alt-en="Urban Flow Compass totem with the A, B and C route dial">
+          <span class="pc-body">
+            <span class="pc-ctx"><span lang="pt-BR">Projetos I · CESAR School · 2026</span><span lang="en">Projects I · CESAR School · 2026</span></span>
+            <span class="pc-t">Bússola de Fluxo Urbano</span>
+            <span class="pc-d"><span lang="pt-BR">Uma bússola de verdade, só que de gente: aponta por qual de três caminhos está passando mais gente.</span><span lang="en">A real compass, but for people: it points to which of three paths has the most foot traffic.</span></span>
+          </span>
+        </a>
+        <ul class="pc-tags" aria-label="Tags"><li><span lang="pt-BR">Hardware</span><span lang="en">Hardware</span></li><li><span lang="pt-BR">Em equipe</span><span lang="en">Team</span></li><li><span lang="pt-BR">3D</span><span lang="en">3D</span></li></ul>
+      </li>
+      <li class="pcard rv" data-tags="software equipe python ia" data-kw="segurança security acessos access logs registros alerta alert tkinter windows desktop assistente assistant inteligencia artificial ai">
+        <a href="sentinelalog.html">
+          <img src="assets/sentinela-acessos.webp" width="1180" height="740" loading="lazy" alt="Tela de acessos do SentinelaLog" data-alt-en="SentinelaLog access screen">
+          <span class="pc-body">
+            <span class="pc-ctx"><span lang="pt-BR">Fundamentos de Programação · CESAR School · 2026</span><span lang="en">Programming Fundamentals · CESAR School · 2026</span></span>
+            <span class="pc-t">SentinelaLog</span>
+            <span class="pc-d"><span lang="pt-BR">Fica de olho em quem entra num laboratório fictício e nunca dá um alerta sem explicar o porquê.</span><span lang="en">Keeps an eye on who enters a fictional lab and never raises an alert without explaining why.</span></span>
+          </span>
+        </a>
+        <ul class="pc-tags" aria-label="Tags"><li><span lang="pt-BR">Software</span><span lang="en">Software</span></li><li><span lang="pt-BR">Em equipe</span><span lang="en">Team</span></li><li><span lang="pt-BR">Python</span><span lang="en">Python</span></li><li><span lang="pt-BR">IA</span><span lang="en">AI</span></li></ul>
+      </li>
+      <li class="pcard rv" data-tags="web solo react" data-kw="fastapi sqlite api frontend backend painel dashboard bugs gravidade severity">
+        <a href="bug-tracker.html">
+          <img src="assets/dashboard.webp" width="1280" height="500" loading="lazy" alt="Painel do Bug Tracker Pro" data-alt-en="Bug Tracker Pro dashboard">
+          <span class="pc-body">
+            <span class="pc-ctx"><span lang="pt-BR">Projeto pessoal</span><span lang="en">Personal project</span></span>
+            <span class="pc-t">Bug Tracker Pro</span>
+            <span class="pc-d"><span lang="pt-BR">Um caderninho de bugs com prioridade. Sim, ele também teve os dele.</span><span lang="en">A little bug notebook with priorities. Yes, it had bugs of its own.</span></span>
+          </span>
+        </a>
+        <ul class="pc-tags" aria-label="Tags"><li><span lang="pt-BR">Web</span><span lang="en">Web</span></li><li><span lang="pt-BR">Solo</span><span lang="en">Solo</span></li><li><span lang="pt-BR">React</span><span lang="en">React</span></li></ul>
+      </li>
+      <li class="pcard rv" data-tags="jogos solo" data-kw="game jogo bitsy narrativa narrative itch navegador browser amergin">
+        <a href="https://hecanof.itch.io/the-song-of-amergin">
+          <img src="assets/amergin.webp" width="959" height="958" loading="lazy" alt="Cena do jogo The Song Of Amergin: um falcão em pixel art verde e três opções de diálogo" data-alt-en="Scene from The Song Of Amergin: a green pixel-art falcon and three dialogue choices">
+          <span class="pc-body">
+            <span class="pc-ctx"><span lang="pt-BR">Meu jogo · em desenvolvimento</span><span lang="en">My game · in development</span></span>
+            <span class="pc-t">The Song Of Amergin</span>
+            <span class="pc-d"><span lang="pt-BR">Uma aventura curtinha, sem combate, que roda no navegador. Só história e atmosfera.</span><span lang="en">A short adventure with no combat that runs in the browser. Just story and atmosphere.</span></span>
+          </span>
+        </a>
+        <ul class="pc-tags" aria-label="Tags"><li><span lang="pt-BR">Jogos</span><span lang="en">Games</span></li><li>Solo</li></ul>
+      </li>
+    </ul>
+    <p class="empty" id="proj-empty" hidden><span lang="pt-BR">Nada por aqui com essa palavra. Tenta outra?</span><span lang="en">Nothing here with that word. Try another one?</span></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap"><span>Guilherme Alcântara Batista Alencar de Oliveira, Recife</span><span lang="pt-BR">Atualizado em novembro de 2026</span><span lang="en">Updated November 2026</span><a class="foot-t" href="thaynna.html"><span lang="pt-BR">Para a Thaynná</span><span lang="en">For Thaynná</span></a></div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
