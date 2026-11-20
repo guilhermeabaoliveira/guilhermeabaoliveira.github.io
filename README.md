@@ -50,3 +50,16 @@ Depois acesse `http://localhost:8000`.
 - Respeita a preferência do sistema por menos movimento: a cena 3D vira imagem estática.
 - Textos alternativos em português e inglês em todas as imagens.
 - Navegação por teclado com foco visível.
+
+## Validação
+
+As três páginas passam no [Markup Validation Service](https://validator.w3.org/nu/) do W3C sem erros. Para conferir, cole o endereço de cada página no validador:
+
+- https://guilhermeabaoliveira.github.io/
+- https://guilhermeabaoliveira.github.io/projeto-1.html
+- https://guilhermeabaoliveira.github.io/estudos.html
+
+## Autor
+
+Guilherme Alcântara, estudante de Ciência da Computação na CESAR School.
+[LinkedIn](https://www.linkedin.com/in/guilhermealcantarabatistaalencardeoliveira) · [GitHub](https://github.com/guilhermeabaoliveira)
