@@ -598,3 +598,39 @@ h1,h2,h3,.kicker,.brand,.steps b,.fact .v,.btn,.hero-name,.page-hero .kick,.grou
 .a7x .src a{color:var(--red)}
 .a7x .a7x-pics .pola{background:#141110;padding:8px 8px 8px;box-shadow:0 18px 30px -16px rgba(0,0,0,.6)}
 .a7x .a7x-pics img{filter:contrast(1.08) sepia(.15)}
+/* centralizar páginas de leitura no computador */
+.story-long .chapter-b{margin-inline:auto}
+.page-hero:has(~ .story-long){max-width:calc(760px + 2 * clamp(1.2rem,5vw,2.5rem))}
+.g-duo{grid-template-columns:1fr 1fr;max-width:none}
+/* celular: menos espaço vazio, mais coisa por tela */
+@media(max-width:600px){
+ body{font-size:1.04rem;line-height:1.55}
+ .wrap{padding-inline:1rem}
+ .sec{padding-block:2.6rem}
+ .hero{padding-block:2.6rem 1.4rem}
+ .hero h1{font-size:2.1rem}
+ .page-hero{padding-block:2.2rem 1rem}
+ .page-hero h1{font-size:1.95rem}
+ .hero .sub,.page-hero p.lead,.story p,.chapter-b p,.pair-txt p{font-size:1.04rem!important;line-height:1.6}
+ .chapter-b{padding-block:1.6rem}
+ .chapter-b h2,.block h2,.story h2,.camp-head h2,.contact h2,.teaser h2,.tm-txt h2{font-size:1.55rem}
+ .pairs{gap:2rem}
+ .pair{gap:1rem}
+ .pair-pics .pola{width:min(80%,300px)}
+ .pair-pics.two{grid-template-columns:1fr 1fr;justify-items:stretch}
+ .pair-pics.two .pola,.pair-pics.two .pola:last-child{width:100%;margin:0}
+ .polas{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+ .polas .pola,.camp-wall .pola{width:100%}
+ .polas .pola:nth-child(even){transform:rotate(1.5deg)}
+ .tm-food{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+ .tm-food .pola{width:100%}
+ .relic,.relic-kid{max-width:70%}
+ .g-shot{margin:1rem 0 .2rem}
+ .pgrid{gap:1rem}
+ .a7x{padding:1.8rem 1.1rem}
+ .a7x .setlist-ol{columns:2;font-size:.85rem}
+ .story{gap:1.6rem}
+ .bar .wrap{padding-block:.5rem .4rem;row-gap:.25rem}
+ .channels a{padding:.8rem 1rem}
+}
+.g-duo{margin-bottom:1.4rem}
