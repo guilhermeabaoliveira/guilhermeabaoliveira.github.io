@@ -3,11 +3,13 @@
   --bg:#0B1214;--bg-2:#121C1F;--card:#152226;--ink:#F2F5F5;--ink-2:#A3B1B4;--quiet:#7F8E92;
   --line:rgba(242,245,245,.12);--accent:#7FC4CB;--accent-ink:#0B1214;
   --shadow:0 40px 90px -50px rgba(0,0,0,.8);
+  color-scheme:dark;
 }
 [data-theme="light"]{
   --bg:#F4F6F6;--bg-2:#E9EEEE;--card:#FFFFFF;--ink:#122126;--ink-2:#4B5E64;--quiet:#68787D;
   --line:rgba(18,33,38,.13);--accent:#1D6A73;--accent-ink:#FFFFFF;
   --shadow:0 40px 90px -55px rgba(18,33,38,.35);
+  color-scheme:light;
 }
 :root{--sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--wrap:1120px}
 *{box-sizing:border-box}
