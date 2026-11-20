@@ -577,3 +577,24 @@ h1,h2,h3,.kicker,.brand,.steps b,.fact .v,.btn,.hero-name,.page-hero .kick,.grou
 .g-pair img{width:100%;max-width:none}
 .g-small{grid-template-columns:1fr 1fr;max-width:560px}
 .g-label{font-family:var(--display);font-size:.74rem!important;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:1.6rem 0 -.6rem!important}
+/* Na trilha: no clima do site do Avenged Sevenfold (papel, máquina de escrever, tinta) */
+@font-face{font-family:"Special Elite";src:url(fonts/special-elite.woff2) format("woff2");font-display:swap}
+.a7x{--paper:#D4C2AA;--paper-2:#EEDEC9;--ink:#141110;--red:#C8553D;position:relative;overflow:hidden;color:var(--ink);border:0;border-radius:2px;padding:2.4rem clamp(1.4rem,4vw,3rem) 2.2rem;
+ background:radial-gradient(120% 90% at 50% 40%,var(--paper-2),var(--paper) 70%,#BFA98C);
+ box-shadow:0 30px 70px -30px rgba(0,0,0,.85)}
+.a7x::before{content:"";position:absolute;inset:-6px;pointer-events:none;z-index:1;
+ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' preserveAspectRatio='none'%3E%3Cfilter id='r'%3E%3CfeTurbulence baseFrequency='.045' numOctaves='3' seed='7'/%3E%3CfeDisplacementMap in='SourceGraphic' scale='14'/%3E%3C/filter%3E%3Crect x='6' y='6' width='388' height='288' fill='none' stroke='%23141110' stroke-width='12' filter='url(%23r)'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.a7x::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .25 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.a7x>*{position:relative;z-index:2}
+.a7x .a7x-scrawl{position:absolute;inset:0;z-index:0;display:flex;flex-wrap:wrap;align-content:flex-start;gap:.2rem 1.4rem;padding:1rem;transform:rotate(-4deg) scale(1.15);pointer-events:none;overflow:hidden}
+.a7x .a7x-scrawl span{font-family:"Special Elite",monospace;font-size:clamp(1.3rem,2.6vw,2.1rem);text-transform:uppercase;color:rgba(20,17,16,.05);white-space:nowrap}
+.a7x .a7x-scrawl span:nth-child(5n){color:rgba(200,85,61,.12)}
+.a7x h3{font-family:"Special Elite",monospace;letter-spacing:.18em;color:var(--red);font-size:.95rem}
+.a7x .trilha-txt b{font-family:"Special Elite",monospace;font-weight:400;text-transform:uppercase;font-size:clamp(1.9rem,4.6vw,3.2rem);letter-spacing:.04em;color:var(--ink);line-height:1;text-shadow:1px 1px 0 rgba(20,17,16,.25)}
+.a7x .trilha-txt>span,.a7x .trilha-txt>span span{color:#3B302A;font-family:"Special Elite",monospace;font-size:1.05rem}
+.a7x .setlist-ol{font-family:"Special Elite",monospace;color:var(--ink);font-size:1rem;text-transform:uppercase}
+.a7x .setlist-ol li::marker{color:var(--red);font-family:"Special Elite",monospace}
+.a7x .src,.a7x .src span{color:#5A4A3D;font-family:"Special Elite",monospace;font-style:normal}
+.a7x .src a{color:var(--red)}
+.a7x .a7x-pics .pola{background:#141110;padding:8px 8px 8px;box-shadow:0 18px 30px -16px rgba(0,0,0,.6)}
+.a7x .a7x-pics img{filter:contrast(1.08) sepia(.15)}
