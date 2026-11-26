@@ -186,7 +186,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .chapter-b p{font-size:1.12rem;line-height:1.75;margin:0 0 1.1rem}
 .chapter-b p.q{color:var(--ink-2)}
 .pull{margin:2rem 0;padding:0 0 0 1.4rem;border-left:3px solid var(--accent);font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.03em;line-height:1.2}
-.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .closing p{font-size:1.25rem;line-height:1.65}
 .closing .sign{font-weight:800;letter-spacing:-.02em;color:var(--accent);margin-top:1.4rem}
 .hero-name{margin:0 0 .9rem;font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
@@ -634,3 +634,28 @@ h1,h2,h3,.kicker,.brand,.steps b,.fact .v,.btn,.hero-name,.page-hero .kick,.grou
  .channels a{padding:.8rem 1rem}
 }
 .g-duo{margin-bottom:1.4rem}
+/* artigos */
+.art-list{list-style:none;margin:0 auto;padding:0;max-width:760px;display:grid;gap:1.2rem}
+.art-item a{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:4px;background:var(--card);padding:1.6rem 1.6rem 1.4rem;transition:border-color .25s,box-shadow .25s,transform .25s}
+.art-item a:hover{border-color:var(--accent);box-shadow:0 0 34px -12px var(--ember);transform:translateY(-3px)}
+.art-date{display:block;font-family:var(--display);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.art-title{display:block;font-family:var(--display);font-weight:600;font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.2;margin:.5rem 0 .6rem}
+.art-sum,.art-sum span{display:block;color:var(--ink-2);font-size:1.08rem}
+.art-more{display:block;margin-top:1rem;color:var(--accent);font-style:italic}
+.art-body .chapter-b::before,.art-body .chapter-b::after{display:none}
+.art-body h2{font-family:var(--display);font-weight:600;font-size:clamp(1.35rem,2.6vw,1.8rem);margin:2.4rem 0 1rem}
+.art-body p:first-child{font-family:var(--display);font-size:clamp(1.4rem,3vw,1.9rem)!important;color:var(--accent);line-height:1.3}
+/* celular: projetos em grade de 2 */
+@media(max-width:600px){
+ .pgrid{grid-template-columns:1fr 1fr;gap:.7rem}
+ .pc-body{padding:.7rem .75rem .3rem}
+ .pc-ctx{font-size:.7rem;line-height:1.3}
+ .pc-t{font-size:1rem;margin:.25rem 0}
+ .pc-d,.pc-d span{font-size:.85rem;line-height:1.4}
+ .pc-tags{padding:.3rem .75rem .8rem;gap:.25rem}
+ .pc-tags li{font-size:.55rem;padding:.15rem .35rem}
+ .pcard img{padding:.3rem}
+ .chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:.3rem}
+ .chips button{flex:none}
+ .art-item a{padding:1.1rem}
+}

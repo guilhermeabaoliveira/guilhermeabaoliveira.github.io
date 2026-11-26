@@ -4,14 +4,14 @@
   function setLang(l){
     root.setAttribute('data-lang',l);root.lang=l==='en'?'en':'pt-BR';
     document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l))});
-    syncAlts(l);document.querySelectorAll('input[data-ph-en]').forEach(function(i){if(!i.dataset.phPt)i.dataset.phPt=i.placeholder;i.placeholder=l==='en'?i.dataset.phEn:i.dataset.phPt});if(window.__projSync)window.__projSync();try{localStorage.setItem('ga-lang',l)}catch(e){}
+    syncAlts(l);document.querySelectorAll('input[data-ph-en]').forEach(function(i){if(!i.dataset.phPt)i.dataset.phPt=i.placeholder;i.placeholder=l==='en'?i.dataset.phEn:i.dataset.phPt});if(window.__projSync)window.__projSync();try{localStorage.setItem('ga-lang',l)}catch{/* sem armazenamento: segue sem lembrar */}
   }
   setLang(root.getAttribute('data-lang')==='en'?'en':'pt');
   document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
 
   var tb=document.getElementById('themeBtn');
   function syncTheme(){var d=root.getAttribute('data-theme')!=='light';tb.setAttribute('aria-pressed',String(!d));document.querySelector('meta[name=theme-color]').content=d?'#0D0B09':'#EEE4CE'}
-  tb.addEventListener('click',function(){var n=root.getAttribute('data-theme')==='light'?'dark':'light';root.setAttribute('data-theme',n);try{localStorage.setItem('ga-theme',n)}catch(e){}syncTheme()});
+  tb.addEventListener('click',function(){var n=root.getAttribute('data-theme')==='light'?'dark':'light';root.setAttribute('data-theme',n);try{localStorage.setItem('ga-theme',n)}catch{/* sem armazenamento: segue sem lembrar */}syncTheme()});
   syncTheme();
 
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
