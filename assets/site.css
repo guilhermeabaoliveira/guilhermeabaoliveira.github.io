@@ -659,3 +659,8 @@ h1,h2,h3,.kicker,.brand,.steps b,.fact .v,.btn,.hero-name,.page-hero .kick,.grou
  .chips button{flex:none}
  .art-item a{padding:1.1rem}
 }
+/* artigos: tom sóbrio */
+.art-body p:first-child{font-family:var(--sans);font-style:italic;font-size:clamp(1.3rem,2.4vw,1.6rem)!important;color:var(--ink)}
+.art-body .pull{font-style:normal;font-family:var(--display);font-size:clamp(1.2rem,2.2vw,1.5rem);color:var(--ink)}
+.art-body .pull::before,.art-body .pull::after{content:none}
+.art-more{font-style:normal;font-family:var(--display);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
