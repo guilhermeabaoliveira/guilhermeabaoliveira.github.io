@@ -664,3 +664,13 @@ h1,h2,h3,.kicker,.brand,.steps b,.fact .v,.btn,.hero-name,.page-hero .kick,.grou
 .art-body .pull{font-style:normal;font-family:var(--display);font-size:clamp(1.2rem,2.2vw,1.5rem);color:var(--ink)}
 .art-body .pull::before,.art-body .pull::after{content:none}
 .art-more{font-style:normal;font-family:var(--display);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+
+/* Tema claro: contorno vermelho nos botões */
+[data-theme="light"]{--gw-red:#C8302C;--gw-red-dark:#9E1F1B}
+[data-theme="light"] .btn{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 2px var(--gw-red),0 10px 30px -14px var(--gw-red-dark)}
+[data-theme="light"] .lang,[data-theme="light"] .theme{border-color:var(--gw-red)}
+[data-theme="light"] .theme{color:var(--gw-red-dark)}
+[data-theme="light"] .chips button{border-color:color-mix(in srgb,var(--gw-red) 55%,transparent)}
+[data-theme="light"] .chips button:hover{border-color:var(--gw-red)}
+[data-theme="light"] .chips button[aria-pressed="true"]{border-color:var(--gw-red-dark);box-shadow:0 0 0 1px var(--gw-red)}
+[data-theme="light"] .search input:focus{outline-color:var(--gw-red)}
